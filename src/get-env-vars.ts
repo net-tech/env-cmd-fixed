@@ -1,6 +1,6 @@
-import { GetEnvVarOptions } from './types'
-import { getRCFileVars } from './parse-rc-file'
 import { getEnvFileVars } from './parse-env-file'
+import { getRCFileVars } from './parse-rc-file'
+import { GetEnvVarOptions } from './types'
 
 const RC_FILE_DEFAULT_LOCATIONS = ['./.env-cmdrc', './.env-cmdrc.js', './.env-cmdrc.json']
 const ENV_FILE_DEFAULT_LOCATIONS = ['./.env', './.env.js', './.env.json', './stack.env']
@@ -63,6 +63,7 @@ export async function getEnvFile (
     console.info(error)
   }
   // throw new Error(error)
+  return {}
 }
 
 export async function getRCFile (

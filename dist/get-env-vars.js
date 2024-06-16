@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRCFile = exports.getEnvFile = exports.getEnvVars = void 0;
-const parse_rc_file_1 = require("./parse-rc-file");
 const parse_env_file_1 = require("./parse-env-file");
+const parse_rc_file_1 = require("./parse-rc-file");
 const RC_FILE_DEFAULT_LOCATIONS = ['./.env-cmdrc', './.env-cmdrc.js', './.env-cmdrc.json'];
 const ENV_FILE_DEFAULT_LOCATIONS = ['./.env', './.env.js', './.env.json', './stack.env'];
 async function getEnvVars(options = {}) {
@@ -60,7 +60,8 @@ async function getEnvFile({ filePath, fallback, verbose }) {
     if (verbose === true) {
         console.info(error);
     }
-    throw new Error(error);
+    // throw new Error(error)
+    return {};
 }
 exports.getEnvFile = getEnvFile;
 async function getRCFile({ environments, filePath, verbose }) {
