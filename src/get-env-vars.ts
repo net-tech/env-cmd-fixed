@@ -62,7 +62,7 @@ export async function getEnvFile (
   if (verbose === true) {
     console.info(error)
   }
-  throw new Error(error)
+  // throw new Error(error)
 }
 
 export async function getRCFile (
