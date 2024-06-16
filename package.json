@@ -1,6 +1,6 @@
 {
-  "name": "env-cmd",
-  "version": "10.1.0",
+  "name": "@net-tech-/env-cmd",
+  "version": "1.0.0",
   "description": "Executes a command using the environment variables in an env file",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/toddbluhm/env-cmd.git"
+    "url": "git+ssh://git@github.com/net-tech/env-cmd-fixed.git"
   },
   "keywords": [
     "env",
@@ -39,13 +39,14 @@
     "Eric Lanehart <eric@pushred.co>",
     "Jon Scheiding <jonscheiding@gmail.com>",
     "serapath (Alexander Praetorius) <dev@serapath.de>",
-    "Anton Versal <ant.ver@gmail.com>"
+    "Anton Versal <ant.ver@gmail.com>",
+    "net-tech- <hello@nettech.dev>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/toddbluhm/env-cmd/issues"
+    "url": "https://github.com/net-tech/env-cmd-fixed/issues"
   },
-  "homepage": "https://github.com/toddbluhm/env-cmd#readme",
+  "homepage": "https://github.com/net-tech/env-cmd-fixed#readme",
   "dependencies": {
     "commander": "^5.0.0",
     "cross-spawn": "^7.0.0"
