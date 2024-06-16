@@ -89,7 +89,7 @@ export class TermSignals {
    */
   public _terminateProcess (code?: number, signal?: NodeJS.Signals): void {
     if (signal !== undefined) {
-      return process.kill(process.pid, signal)
+      return void process.kill(process.pid, signal)
     }
     if (code !== undefined) {
       return process.exit(code)
