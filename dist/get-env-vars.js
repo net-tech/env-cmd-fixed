@@ -50,7 +50,11 @@ async function getEnvFile({ filePath, fallback, verbose }) {
             }
             return env;
         }
-        catch (e) { }
+        catch (e) {
+            if (verbose === true) {
+                console.info(`Failed to find .env file at default path: ${path}`);
+            }
+        }
     }
     const error = `Failed to find .env file at default paths: [${ENV_FILE_DEFAULT_LOCATIONS.join(',')}]`;
     if (verbose === true) {
