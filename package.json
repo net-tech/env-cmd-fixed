@@ -1,6 +1,6 @@
 {
   "name": "@net-tech-/env-cmd",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Executes a command using the environment variables in an env file",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
