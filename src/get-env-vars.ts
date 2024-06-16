@@ -3,7 +3,7 @@ import { getRCFileVars } from './parse-rc-file'
 import { GetEnvVarOptions } from './types'
 
 const RC_FILE_DEFAULT_LOCATIONS = ['./.env-cmdrc', './.env-cmdrc.js', './.env-cmdrc.json']
-const ENV_FILE_DEFAULT_LOCATIONS = ['./.env', './.env.js', './.env.json', './stack.env']
+const ENV_FILE_DEFAULT_LOCATIONS = ['./.env', './.env.js', './.env.json', './stack.env', './app/stack.env']
 
 export async function getEnvVars (options: GetEnvVarOptions = {}): Promise<{ [key: string]: any }> {
   options.envFile = options.envFile !== undefined ? options.envFile : {}
